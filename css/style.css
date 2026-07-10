@@ -565,6 +565,12 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.gallery-grid figure > svg {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
 .gallery-grid figcaption {
   padding: 0.75rem 1rem;
   font-size: 0.875rem;
