@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <!-- Replace with client logo mark — keep at 32×32 viewport -->
-  <rect width="32" height="32" rx="6" fill="#2563eb"/>
+  <rect width="32" height="32" rx="6" fill="#15803d"/>
   <text x="16" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="700"
-        text-anchor="middle" fill="#ffffff">[L]</text>
+        text-anchor="middle" fill="#ffffff">P</text>
 </svg>

@@ -2,10 +2,10 @@
    CUSTOM PROPERTIES — swap these to rebrand any client site
    ============================================================ */
 :root {
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-accent: #f59e0b;
-  --color-accent-dark: #d97706;
+  --color-primary: #15803d;
+  --color-primary-dark: #166534;
+  --color-accent: #b45309;
+  --color-accent-dark: #92400e;
   --color-text: #1f2937;
   --color-text-light: #6b7280;
   --color-bg: #ffffff;
