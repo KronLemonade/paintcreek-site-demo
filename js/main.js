@@ -113,9 +113,28 @@ const WEB3FORMS_ACCESS_KEY = 'a2c9c6ad-5d52-4434-b8cf-3993351ce24d';
       result.setAttribute('role', 'alert');
 
       if (response.ok && json.success) {
-        result.className = 'success';
-        result.textContent = 'Thank you! We received your message and will be in touch shortly.';
-        form.reset();
+        const wrap = form.closest('.contact-form-wrap');
+        wrap.querySelector('.form-heading').style.display = 'none';
+        form.style.display = 'none';
+
+        const panel = document.createElement('div');
+        panel.className = 'form-success-panel';
+        panel.setAttribute('role', 'status');
+        panel.innerHTML = [
+          '<div class="form-success-icon" aria-hidden="true">',
+          '  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"',
+          '       stroke-linecap="round" stroke-linejoin="round">',
+          '    <polyline points="20 6 9 17 4 12"/>',
+          '  </svg>',
+          '</div>',
+          '<h3 class="form-success-heading">Message Sent!</h3>',
+          '<p class="form-success-body">',
+          '  Thanks for reaching out — we\'ll be in touch within 1 business day.',
+          '  For faster service, call us at',
+          '  <a href="tel:+12485550199">(248) 555-0199</a>.',
+          '</p>'
+        ].join('');
+        wrap.appendChild(panel);
       } else {
         result.className = 'error';
         result.textContent = json.message || 'Something went wrong. Please try again or call us directly.';

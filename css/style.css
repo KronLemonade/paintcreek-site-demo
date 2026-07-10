@@ -565,6 +565,12 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.gallery-grid figure > svg {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
 .gallery-grid figcaption {
   padding: 0.75rem 1rem;
   font-size: 0.875rem;
@@ -888,6 +894,58 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
   font-size: 0.875rem;
   color: #6b7280;
+}
+
+/* ============================================================
+   FORM SUCCESS PANEL — replaces form on submission
+   ============================================================ */
+.form-success-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  gap: 1rem;
+  animation: fadeInUp 300ms ease both;
+}
+
+.form-success-icon {
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-icon-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-success-icon svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+}
+
+.form-success-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.form-success-body {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  max-width: 40ch;
+}
+
+.form-success-body a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ============================================================

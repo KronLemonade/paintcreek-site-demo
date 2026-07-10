@@ -110,6 +110,7 @@
         <!-- Desktop links -->
         <ul class="nav-links" role="list">
           <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -137,6 +138,7 @@
       <!-- Mobile menu -->
       <div id="mobile-menu" class="nav-mobile-menu" role="navigation" aria-label="Mobile navigation">
         <a href="#services" class="nav-mobile-link">Services</a>
+        <a href="#gallery" class="nav-mobile-link">Gallery</a>
         <a href="#about" class="nav-mobile-link">About</a>
         <a href="#contact" class="nav-mobile-link">Contact</a>
         <a href="tel:+12485550199" class="btn btn-primary nav-mobile-cta">
@@ -175,16 +177,112 @@
           </div>
         </div>
 
-        <!-- Hero image / illustration slot -->
+        <!-- Hero illustration -->
         <div class="hero-image-block" aria-hidden="true">
-          <div class="hero-image-placeholder">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="10" y="20" width="60" height="45" rx="4" stroke="#15803d" stroke-width="2" fill="#dcfce7"/>
-              <path d="M10 30l30-18 30 18" stroke="#15803d" stroke-width="2" stroke-linejoin="round" fill="none"/>
-              <rect x="30" y="40" width="20" height="25" rx="2" fill="#86efac"/>
-            </svg>
-            <p>Replace with hero image<br>1200 × 800 recommended</p>
-          </div>
+          <svg viewBox="0 0 500 360" width="100%" height="100%"
+               preserveAspectRatio="xMidYMid slice"
+               xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#c8e6c9"/>
+                <stop offset="100%" stop-color="#e8f5e9"/>
+              </linearGradient>
+              <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#4caf50"/>
+                <stop offset="100%" stop-color="#388e3c"/>
+              </linearGradient>
+              <linearGradient id="lawn" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#43a047"/>
+                <stop offset="100%" stop-color="#2e7d32"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Sky -->
+            <rect width="500" height="360" fill="url(#sky)"/>
+
+            <!-- Sun -->
+            <circle cx="420" cy="70" r="38" fill="#fff9c4" opacity="0.7"/>
+            <circle cx="420" cy="70" r="28" fill="#fff176" opacity="0.5"/>
+
+            <!-- Distant hill -->
+            <ellipse cx="250" cy="220" rx="310" ry="100" fill="#81c784" opacity="0.6"/>
+
+            <!-- Mid hill -->
+            <path d="M0 260 Q120 190 260 230 Q370 255 500 210 L500 360 L0 360 Z" fill="url(#hill1)"/>
+
+            <!-- House body -->
+            <rect x="155" y="195" width="160" height="110" rx="3" fill="#f5f5f5"/>
+
+            <!-- House roof -->
+            <polygon points="140,200 235,145 330,200" fill="#b45309"/>
+            <polygon points="140,200 235,145 330,200" fill="none" stroke="#92400e" stroke-width="2"/>
+
+            <!-- Chimney -->
+            <rect x="280" y="152" width="18" height="36" rx="2" fill="#92400e"/>
+            <rect x="277" y="149" width="24" height="6" rx="2" fill="#78350f"/>
+
+            <!-- Garage door -->
+            <rect x="165" y="245" width="60" height="60" rx="2" fill="#e0e0e0" stroke="#bdbdbd" stroke-width="1.5"/>
+            <line x1="165" y1="265" x2="225" y2="265" stroke="#bdbdbd" stroke-width="1"/>
+            <line x1="165" y1="285" x2="225" y2="285" stroke="#bdbdbd" stroke-width="1"/>
+            <circle cx="195" cy="295" r="3" fill="#9e9e9e"/>
+
+            <!-- Front door -->
+            <rect x="253" y="248" width="38" height="57" rx="2" fill="#5d4037"/>
+            <rect x="256" y="251" width="14" height="20" rx="1" fill="#4e342e"/>
+            <rect x="274" y="251" width="14" height="20" rx="1" fill="#4e342e"/>
+            <circle cx="265" cy="278" r="3" fill="#ffd54f"/>
+
+            <!-- Windows -->
+            <rect x="170" y="210" width="42" height="30" rx="2" fill="#b3e5fc" stroke="#90caf9" stroke-width="1.5"/>
+            <line x1="191" y1="210" x2="191" y2="240" stroke="#90caf9" stroke-width="1"/>
+            <line x1="170" y1="225" x2="212" y2="225" stroke="#90caf9" stroke-width="1"/>
+            <rect x="258" y="210" width="42" height="30" rx="2" fill="#b3e5fc" stroke="#90caf9" stroke-width="1.5"/>
+            <line x1="279" y1="210" x2="279" y2="240" stroke="#90caf9" stroke-width="1"/>
+            <line x1="258" y1="225" x2="300" y2="225" stroke="#90caf9" stroke-width="1"/>
+
+            <!-- Stone path -->
+            <ellipse cx="235" cy="318" rx="22" ry="10" fill="#b0bec5" opacity="0.9"/>
+            <ellipse cx="235" cy="338" rx="26" ry="11" fill="#9e9e9e" opacity="0.8"/>
+            <ellipse cx="235" cy="358" rx="30" ry="12" fill="#90a4ae" opacity="0.7"/>
+
+            <!-- Patio / front step -->
+            <rect x="220" y="305" width="60" height="10" rx="2" fill="#bcaaa4"/>
+
+            <!-- Shrubs left -->
+            <circle cx="152" cy="295" r="22" fill="#2e7d32"/>
+            <circle cx="133" cy="302" r="16" fill="#388e3c"/>
+            <circle cx="168" cy="302" r="14" fill="#1b5e20"/>
+
+            <!-- Shrubs right -->
+            <circle cx="345" cy="293" r="20" fill="#2e7d32"/>
+            <circle cx="363" cy="300" r="15" fill="#388e3c"/>
+            <circle cx="328" cy="301" r="14" fill="#1b5e20"/>
+
+            <!-- Tree left -->
+            <rect x="73" y="220" width="10" height="85" rx="3" fill="#5d4037"/>
+            <circle cx="78" cy="195" r="42" fill="#2e7d32"/>
+            <circle cx="60" cy="210" r="28" fill="#388e3c"/>
+            <circle cx="96" cy="212" r="26" fill="#1b5e20"/>
+            <circle cx="78" cy="178" r="22" fill="#388e3c"/>
+
+            <!-- Tree right -->
+            <rect x="408" y="235" width="9" height="70" rx="3" fill="#5d4037"/>
+            <circle cx="412" cy="213" r="34" fill="#2e7d32"/>
+            <circle cx="396" cy="225" r="22" fill="#388e3c"/>
+            <circle cx="428" cy="226" r="20" fill="#1b5e20"/>
+            <circle cx="412" cy="198" r="18" fill="#388e3c"/>
+
+            <!-- Foreground lawn -->
+            <path d="M0 310 Q100 295 250 305 Q380 314 500 298 L500 360 L0 360 Z" fill="url(#lawn)"/>
+
+            <!-- Flower accents -->
+            <circle cx="110" cy="318" r="5" fill="#ffb300"/>
+            <circle cx="118" cy="313" r="4" fill="#ffa000"/>
+            <circle cx="360" cy="316" r="5" fill="#ffb300"/>
+            <circle cx="368" cy="311" r="4" fill="#ff8f00"/>
+            <circle cx="385" cy="320" r="4" fill="#ffa000"/>
+          </svg>
         </div>
 
       </div>
@@ -209,9 +307,13 @@
           <!-- Service 1 -->
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
+              <!-- Lawnmower -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                    stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                <rect x="3" y="8" width="14" height="7" rx="2"/>
+                <circle cx="7" cy="18" r="2"/><circle cx="16" cy="18" r="2"/>
+                <path d="M17 8V5h3l1 3"/>
+                <path d="M3 11H1M21 11h-4"/>
               </svg>
             </div>
             <h3 class="service-name">Lawn Maintenance</h3>
@@ -221,9 +323,13 @@
           <!-- Service 2 -->
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
+              <!-- Patio / stone pavers -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                    stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                <rect x="2" y="2" width="9" height="9" rx="1"/>
+                <rect x="13" y="2" width="9" height="9" rx="1"/>
+                <rect x="2" y="13" width="9" height="9" rx="1"/>
+                <rect x="13" y="13" width="9" height="9" rx="1"/>
               </svg>
             </div>
             <h3 class="service-name">Custom Hardscaping</h3>
@@ -233,9 +339,11 @@
           <!-- Service 3 -->
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
+              <!-- Compass / design -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                    stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/>
+                <circle cx="12" cy="12" r="10"/>
+                <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88"/>
               </svg>
             </div>
             <h3 class="service-name">Landscape Design</h3>
@@ -245,9 +353,12 @@
           <!-- Service 4 -->
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
+              <!-- Mulch mound with leaf -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                    stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+                <path d="M3 18 Q6 10 12 10 Q18 10 21 18 Z"/>
+                <path d="M12 10 C10 6 6 4 4 6 C6 6 9 8 12 10Z"/>
+                <line x1="12" y1="10" x2="10" y2="14"/>
               </svg>
             </div>
             <h3 class="service-name">Mulch &amp; Soil Installation</h3>
@@ -257,9 +368,11 @@
           <!-- Service 5 -->
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
+              <!-- Leaf / seasonal cleanup -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                    stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
               </svg>
             </div>
             <h3 class="service-name">Seasonal Cleanup</h3>
@@ -269,9 +382,11 @@
           <!-- Service 6 -->
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
+              <!-- Tree with rounded canopy -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                    stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                <line x1="12" y1="22" x2="12" y2="13"/>
+                <path d="M8 13 Q5 13 5 9 Q5 5 9 5 Q9 3 12 3 Q15 3 15 5 Q19 5 19 9 Q19 13 16 13 Z"/>
               </svg>
             </div>
             <h3 class="service-name">Tree &amp; Shrub Care</h3>
@@ -346,65 +461,234 @@
     </section>
 
     <!-- ═══════════════════════════════════════
-         GALLERY — uncomment when images are ready
+         GALLERY
          ═══════════════════════════════════════ -->
-    <!--
     <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
       <div class="container">
         <div class="text-center" style="margin-bottom:2.5rem;">
           <span class="section-label">Our Work</span>
           <h2 class="section-heading" id="gallery-heading">Recent Projects</h2>
-          <p class="section-subheading">[Brief description of the gallery, e.g., "Take a look at some of our recent work across Rochester and surrounding areas."]</p>
+          <p class="section-subheading">A sample of our work across Rochester and Oakland County — from lawn transformations to custom hardscape builds.</p>
         </div>
 
         <div class="gallery-grid">
 
+          <!-- 1: Lawn renovation -->
           <figure>
-            <img src="/images/gallery/project-1.jpg"
-                 alt="[Descriptive alt text for this project photo]"
-                 width="600" height="400" loading="lazy">
-            <figcaption>[Project caption or location]</figcaption>
+            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="600" height="400" fill="#c8e6c9"/>
+              <rect x="0" y="200" width="600" height="200" fill="#4caf50"/>
+              <rect x="0" y="240" width="600" height="160" fill="#388e3c"/>
+              <rect x="0" y="280" width="600" height="120" fill="#2e7d32"/>
+              <!-- Stripes -->
+              <rect x="0" y="200" width="60" height="200" fill="#43a047" opacity="0.4"/>
+              <rect x="120" y="200" width="60" height="200" fill="#43a047" opacity="0.4"/>
+              <rect x="240" y="200" width="60" height="200" fill="#43a047" opacity="0.4"/>
+              <rect x="360" y="200" width="60" height="200" fill="#43a047" opacity="0.4"/>
+              <rect x="480" y="200" width="60" height="200" fill="#43a047" opacity="0.4"/>
+              <!-- Sky clouds -->
+              <ellipse cx="120" cy="80" rx="70" ry="35" fill="white" opacity="0.8"/>
+              <ellipse cx="160" cy="65" rx="50" ry="30" fill="white" opacity="0.9"/>
+              <ellipse cx="450" cy="100" rx="80" ry="32" fill="white" opacity="0.7"/>
+              <ellipse cx="490" cy="88" rx="55" ry="28" fill="white" opacity="0.8"/>
+              <!-- Mower outline -->
+              <rect x="255" y="170" width="90" height="50" rx="6" fill="#f5f5f5" stroke="#9e9e9e" stroke-width="2"/>
+              <circle cx="275" cy="225" r="14" fill="#757575"/>
+              <circle cx="325" cy="225" r="14" fill="#757575"/>
+              <rect x="335" y="155" width="12" height="25" rx="3" fill="#bdbdbd"/>
+            </svg>
+            <figcaption>Lawn Renovation — Oakland Township</figcaption>
           </figure>
 
+          <!-- 2: Custom patio -->
           <figure>
-            <img src="/images/gallery/project-2.jpg"
-                 alt="[Descriptive alt text for this project photo]"
-                 width="600" height="400" loading="lazy">
-            <figcaption>[Project caption or location]</figcaption>
+            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="600" height="400" fill="#efebe9"/>
+              <!-- Sky -->
+              <rect width="600" height="180" fill="#e3f2fd"/>
+              <!-- Ground -->
+              <rect y="180" width="600" height="220" fill="#a5d6a7"/>
+              <!-- Patio stones -->
+              <g fill="#bcaaa4" stroke="#8d6e63" stroke-width="1.5">
+                <rect x="80" y="220" width="100" height="70" rx="3"/>
+                <rect x="190" y="220" width="100" height="70" rx="3"/>
+                <rect x="300" y="220" width="100" height="70" rx="3"/>
+                <rect x="410" y="220" width="100" height="70" rx="3"/>
+                <rect x="130" y="300" width="100" height="60" rx="3"/>
+                <rect x="240" y="300" width="100" height="60" rx="3"/>
+                <rect x="350" y="300" width="100" height="60" rx="3"/>
+              </g>
+              <!-- Grout lines (lighter) -->
+              <g stroke="#d7ccc8" stroke-width="2" fill="none">
+                <line x1="80" y1="255" x2="510" y2="255"/>
+                <line x1="80" y1="300" x2="510" y2="300"/>
+                <line x1="185" y1="220" x2="185" y2="360"/>
+                <line x1="295" y1="220" x2="295" y2="360"/>
+                <line x1="405" y1="220" x2="405" y2="360"/>
+              </g>
+              <!-- Fire pit -->
+              <circle cx="300" cy="170" r="28" fill="#795548" stroke="#5d4037" stroke-width="2"/>
+              <circle cx="300" cy="170" r="18" fill="#37474f"/>
+              <path d="M294 165 Q300 150 306 165 Q312 158 308 170 Q300 178 292 170 Q288 158 294 165Z" fill="#ff7043" opacity="0.9"/>
+              <path d="M298 168 Q300 158 302 168 Q306 163 304 170 Q300 175 296 170Z" fill="#ffcc02"/>
+              <!-- Chairs -->
+              <rect x="240" y="155" width="28" height="20" rx="3" fill="#5d4037"/>
+              <rect x="240" y="171" width="28" height="5" rx="2" fill="#4e342e"/>
+              <rect x="342" y="155" width="28" height="20" rx="3" fill="#5d4037"/>
+              <rect x="342" y="171" width="28" height="5" rx="2" fill="#4e342e"/>
+            </svg>
+            <figcaption>Custom Patio &amp; Fire Pit — Rochester Hills</figcaption>
           </figure>
 
+          <!-- 3: Garden bed / planting -->
           <figure>
-            <img src="/images/gallery/project-3.jpg"
-                 alt="[Descriptive alt text for this project photo]"
-                 width="600" height="400" loading="lazy">
-            <figcaption>[Project caption or location]</figcaption>
+            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="600" height="400" fill="#dcedc8"/>
+              <!-- Sky -->
+              <rect width="600" height="160" fill="#e8f5e9"/>
+              <!-- Lawn -->
+              <rect y="160" width="600" height="240" fill="#4caf50"/>
+              <!-- Mulch bed -->
+              <ellipse cx="300" cy="260" rx="240" ry="80" fill="#795548"/>
+              <ellipse cx="300" cy="260" rx="220" ry="70" fill="#8d6e63"/>
+              <!-- Plants / shrubs -->
+              <circle cx="160" cy="230" r="35" fill="#2e7d32"/>
+              <circle cx="145" cy="244" r="22" fill="#388e3c"/>
+              <circle cx="175" cy="245" r="20" fill="#1b5e20"/>
+              <circle cx="300" cy="215" r="45" fill="#33691e"/>
+              <circle cx="280" cy="230" r="28" fill="#558b2f"/>
+              <circle cx="320" cy="232" r="26" fill="#2e7d32"/>
+              <circle cx="440" cy="228" r="36" fill="#2e7d32"/>
+              <circle cx="425" cy="242" r="22" fill="#388e3c"/>
+              <circle cx="455" cy="243" r="20" fill="#1b5e20"/>
+              <!-- Flowers -->
+              <circle cx="200" cy="196" r="8" fill="#e91e63"/>
+              <circle cx="215" cy="188" r="7" fill="#f06292"/>
+              <circle cx="380" cy="194" r="8" fill="#ffb300"/>
+              <circle cx="395" cy="186" r="7" fill="#ffc107"/>
+              <circle cx="250" cy="190" r="6" fill="#ab47bc"/>
+              <!-- Border edging -->
+              <path d="M60 340 Q300 295 540 340" fill="none" stroke="#5d4037" stroke-width="4"/>
+            </svg>
+            <figcaption>Garden Bed &amp; Planting Design — Rochester</figcaption>
           </figure>
 
+          <!-- 4: Retaining wall -->
           <figure>
-            <img src="/images/gallery/project-4.jpg"
-                 alt="[Descriptive alt text for this project photo]"
-                 width="600" height="400" loading="lazy">
-            <figcaption>[Project caption or location]</figcaption>
+            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="600" height="400" fill="#f3e5f5"/>
+              <!-- Sky -->
+              <rect width="600" height="160" fill="#e8f5e9"/>
+              <!-- Upper lawn -->
+              <rect y="150" width="600" height="80" fill="#4caf50"/>
+              <!-- Wall face - two tiers -->
+              <rect x="50" y="220" width="500" height="50" rx="2" fill="#90a4ae"/>
+              <rect x="70" y="225" width="460" height="40" rx="2" fill="#b0bec5"/>
+              <!-- Stone joints tier 1 -->
+              <g stroke="#78909c" stroke-width="1.5" fill="none">
+                <line x1="50" y1="245" x2="550" y2="245"/>
+                <line x1="180" y1="220" x2="180" y2="270"/>
+                <line x1="310" y1="220" x2="310" y2="270"/>
+                <line x1="430" y1="220" x2="430" y2="270"/>
+                <line x1="120" y1="245" x2="120" y2="270"/>
+                <line x1="250" y1="245" x2="250" y2="270"/>
+                <line x1="370" y1="245" x2="370" y2="270"/>
+                <line x1="490" y1="245" x2="490" y2="270"/>
+              </g>
+              <!-- Wall tier 2 -->
+              <rect x="50" y="270" width="500" height="50" rx="2" fill="#90a4ae"/>
+              <rect x="70" y="275" width="460" height="40" rx="2" fill="#b0bec5"/>
+              <g stroke="#78909c" stroke-width="1.5" fill="none">
+                <line x1="50" y1="295" x2="550" y2="295"/>
+                <line x1="150" y1="270" x2="150" y2="320"/>
+                <line x1="280" y1="270" x2="280" y2="320"/>
+                <line x1="410" y1="270" x2="410" y2="320"/>
+                <line x1="100" y1="295" x2="100" y2="320"/>
+                <line x1="220" y1="295" x2="220" y2="320"/>
+                <line x1="345" y1="295" x2="345" y2="320"/>
+                <line x1="470" y1="295" x2="470" y2="320"/>
+              </g>
+              <!-- Lower lawn -->
+              <rect y="320" width="600" height="80" fill="#388e3c"/>
+              <!-- Plants on top of wall -->
+              <circle cx="150" cy="168" r="18" fill="#2e7d32"/>
+              <circle cx="300" cy="165" r="22" fill="#388e3c"/>
+              <circle cx="450" cy="170" r="16" fill="#2e7d32"/>
+            </svg>
+            <figcaption>Retaining Wall Installation — Paint Creek Township</figcaption>
           </figure>
 
+          <!-- 5: Mulch & cleanup -->
           <figure>
-            <img src="/images/gallery/project-5.jpg"
-                 alt="[Descriptive alt text for this project photo]"
-                 width="600" height="400" loading="lazy">
-            <figcaption>[Project caption or location]</figcaption>
+            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="600" height="400" fill="#fff8e1"/>
+              <!-- Sky - autumn -->
+              <rect width="600" height="180" fill="#ffe0b2"/>
+              <!-- Ground -->
+              <rect y="180" width="600" height="220" fill="#8d6e63"/>
+              <!-- Mulch texture -->
+              <rect y="220" width="600" height="180" fill="#795548"/>
+              <!-- Fresh mulch bed highlight -->
+              <ellipse cx="300" cy="310" rx="230" ry="70" fill="#6d4c41" opacity="0.6"/>
+              <!-- Autumn tree -->
+              <rect x="270" y="80" width="16" height="110" rx="4" fill="#5d4037"/>
+              <circle cx="278" cy="80" r="52" fill="#f57c00"/>
+              <circle cx="255" cy="95" r="35" fill="#ff8f00"/>
+              <circle cx="300" cy="90" r="38" fill="#e65100"/>
+              <circle cx="278" cy="62" r="28" fill="#ff6d00"/>
+              <!-- Fallen leaves -->
+              <ellipse cx="100" cy="250" rx="14" ry="8" fill="#ff7043" opacity="0.9" transform="rotate(-20,100,250)"/>
+              <ellipse cx="150" cy="270" rx="12" ry="7" fill="#ffb300" opacity="0.9" transform="rotate(15,150,270)"/>
+              <ellipse cx="420" cy="245" rx="13" ry="8" fill="#f4511e" opacity="0.9" transform="rotate(-10,420,245)"/>
+              <ellipse cx="480" cy="265" rx="11" ry="7" fill="#ff8f00" opacity="0.8" transform="rotate(25,480,265)"/>
+              <ellipse cx="200" cy="290" rx="12" ry="7" fill="#ffcc02" opacity="0.9" transform="rotate(-5,200,290)"/>
+              <!-- Wheelbarrow -->
+              <path d="M380 310 L450 280 L480 295 L415 328 Z" fill="#bdbdbd" stroke="#9e9e9e" stroke-width="2"/>
+              <circle cx="390" cy="330" r="16" fill="#757575"/>
+              <line x1="415" y1="328" x2="420" y2="355" stroke="#9e9e9e" stroke-width="3"/>
+              <line x1="480" y1="295" x2="490" y2="318" stroke="#9e9e9e" stroke-width="3"/>
+            </svg>
+            <figcaption>Fall Cleanup &amp; Mulch — Auburn Hills</figcaption>
           </figure>
 
+          <!-- 6: Tree trimming -->
           <figure>
-            <img src="/images/gallery/project-6.jpg"
-                 alt="[Descriptive alt text for this project photo]"
-                 width="600" height="400" loading="lazy">
-            <figcaption>[Project caption or location]</figcaption>
+            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="600" height="400" fill="#e8f5e9"/>
+              <!-- Sky -->
+              <rect width="600" height="220" fill="#e3f2fd"/>
+              <!-- Ground -->
+              <rect y="320" width="600" height="80" fill="#4caf50"/>
+              <rect y="340" width="600" height="60" fill="#388e3c"/>
+              <!-- Large tree trunk -->
+              <rect x="255" y="200" width="40" height="140" rx="8" fill="#5d4037"/>
+              <rect x="265" y="200" width="20" height="140" rx="4" fill="#6d4c41"/>
+              <!-- Main canopy layers -->
+              <ellipse cx="275" cy="200" rx="90" ry="70" fill="#2e7d32"/>
+              <ellipse cx="240" cy="175" rx="65" ry="55" fill="#388e3c"/>
+              <ellipse cx="310" cy="170" rx="60" ry="52" fill="#1b5e20"/>
+              <ellipse cx="275" cy="140" rx="75" ry="60" fill="#33691e"/>
+              <ellipse cx="275" cy="110" rx="55" ry="45" fill="#388e3c"/>
+              <!-- Trimmed/neat shape highlight -->
+              <ellipse cx="275" cy="160" rx="88" ry="68" fill="none" stroke="#81c784" stroke-width="2" stroke-dasharray="6,4"/>
+              <!-- Smaller tree right -->
+              <rect x="450" y="270" width="18" height="65" rx="4" fill="#5d4037"/>
+              <circle cx="459" cy="255" r="38" fill="#2e7d32"/>
+              <circle cx="443" cy="268" r="26" fill="#388e3c"/>
+              <circle cx="475" cy="265" r="24" fill="#1b5e20"/>
+              <!-- Pruning shears decorative -->
+              <g transform="translate(370,240) rotate(-30)">
+                <line x1="0" y1="0" x2="30" y2="0" stroke="#616161" stroke-width="4" stroke-linecap="round"/>
+                <line x1="0" y1="6" x2="30" y2="6" stroke="#616161" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="0" cy="3" r="7" fill="#9e9e9e"/>
+              </g>
+            </svg>
+            <figcaption>Tree Trimming &amp; Shaping — Rochester</figcaption>
           </figure>
 
         </div>
       </div>
     </section>
-    -->
 
     <!-- ═══════════════════════════════════════
          TESTIMONIALS — uncomment when collected
